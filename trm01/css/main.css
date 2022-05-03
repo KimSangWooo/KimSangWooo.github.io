@@ -30,7 +30,7 @@
     gap: 25px;
     display: flex;
     line-height: 90px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -62,7 +62,10 @@
     font-size: 60px;
     font-weight: 900;
     margin: 0 0 30px 0;
-    color: #00f;
+    color: transparent;
+    background: linear-gradient(#369 30%, #e7948f 70%);
+    -webkit-background-clip: text;
+
 }
 
 .main_slider strong {
@@ -89,4 +92,231 @@
 
 .main_slider .slick-dots button {
     display: none;
+}
+
+.main_banner {
+    transform: translateY(-80%);
+}
+
+.main_banner .container {
+    height: 220px;
+    align-items: flex-end;
+}
+
+.main_banner figure {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    transition: 0.5s;
+
+}
+
+.main_banner figure:hover {
+    height: 220px;
+}
+
+.main_banner figure:nth-child(1) {
+    background: #e7948f;
+}
+
+.main_banner figure:nth-child(2) {
+    background: #f3ca4f;
+}
+
+.main_banner figure:nth-child(3) {
+    background: #337688;
+}
+
+.main_banner figure:nth-child(4) {
+    background: #0fa376;
+}
+
+.main_banner figure a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    height: 120px;
+    font-size: 13px;
+}
+
+.main_banner figure:nth-child(1) a {
+    background: url(../img/icon_set_w.png) no-repeat 0 0;
+    transition: 0.5s;
+}
+
+
+.main_banner figure:nth-child(1):hover a {
+    background: url(../img/icon_set_w.png) no-repeat -200px 0;
+}
+
+.main_banner figure:nth-child(2) a {
+    background: url(../img/icon_set_w.png) no-repeat -100px 0;
+}
+
+.main_banner figure:nth-child(3) a {
+    background: url(../img/icon_set_w.png) no-repeat -200px 0;
+}
+
+.main_banner figure:nth-child(4) a {
+    background: url(../img/icon_set_w.png) no-repeat -300px 0;
+}
+
+
+
+.main_banner .customer {
+    position: relative;
+    flex: 2;
+    text-align: right;
+    background: #fddddd;
+    padding: 50px 30px 50px 0;
+
+
+}
+
+.main_banner .customer a {
+    display: block;
+    margin: 0 0 15px 0;
+    font-size: 38px;
+    color: #369;
+    font-weight: 700;
+}
+
+.main_banner .customer i {
+    position: absolute;
+    top: -29px;
+    right: 30px;
+    color: #fff;
+    background: #e7948f;
+    font-size: 38px;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.main_link {
+    padding: 0 0 100px 0;
+    background: linear-gradient(to top, #f7f7f7 70%, transparent 30%);
+}
+
+.main_link h2 {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.main_link h2::before {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background: #f00;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+
+
+
+.main_link h2::after {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background: #f00;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.main_link .container {
+    gap: 30px;
+}
+
+.main_link li::before {}
+
+.main_link figure {
+    /* 박스에 곡률을 줌 */
+    position: relative;
+    border-radius: 50px 0 0 0;
+    overflow: hidden;
+    flex: 1;
+}
+
+
+
+
+
+.main_link img {
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.main_link h3 {
+    font-size: 23px;
+    margin: 0 0 30px 0;
+}
+
+.main_link h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #f00;
+    margin: 15px;
+}
+
+.main_link figure a {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    width: 60px;
+    height: 60px;
+    background: rgba(243, 202, 79, 0.5);
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    text-transform: uppercase;
+
+}
+
+.main_link figure a:hover {
+    background: rgba(243, 202, 79, 1);
+    border-radius: 5px;
+
+
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin: 10px 0;
+}
+
+.footer ul>li {
+    display: inline-block;
+}
+
+.footer ul>li~li ::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #333;
+    margin: 15px;
+    vertical-align: middle;
+
+}
+
+
+
+.footer address {
+    font-style: normal;
 }
