@@ -6,4 +6,8 @@ $(function () {
         vertical: true,
         dots: true,
     });
+
+    $('.mopen').on('click', function () {
+        $('.gmb').toggleClass('on')
+    })
 })
