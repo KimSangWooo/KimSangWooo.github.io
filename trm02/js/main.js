@@ -5,7 +5,7 @@ $(function () {
         $('.top_banner').slideUp(5000);
     });
 
-    $('.main_slider').on('Init relnit afterChange', function () {
+    $('.main_slider').on('init reInit afterChange', function () {
         let current = $('.slick-current');
         current.addClass('on').siblings().removeClass('on');
 
